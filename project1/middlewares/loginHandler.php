@@ -40,9 +40,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
             }else
                 $response["passwordError"] = "Enter valid credentials";
         }else
-            $response["emailError"] = "Enter valid credentials";
+            $response["errorMessage"] = "Email not found wanna signup?";
     }else{
-        $response["errorMessage"] = "Enter valid credentials";
+        $response["emailError"] = "Enter valid credentials";
     }
 }
 else{
